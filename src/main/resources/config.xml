@@ -3,9 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="card" class="hw1.MedicalCardImpl"/>
-
-    <bean id="patient" class="hw1.PatientImpl">
+    <bean id="card" class="homework1.MedicalCard"/>
+    <bean id="registry" class="homework1.Registry"/>
+    <bean id="patient" class="homework1.Patient">
         <property name="card">
             <ref bean="card"/>
         </property>
